@@ -22,19 +22,19 @@ const data = [
     },
     {
         id: 2,
-        title: "HopeForHumanity",
-        desc: "A HTML and CSS based responsive charity website.",
+        title: "WeatherApp",
+        desc: "An Api connected weather app.",
         img: "/weatherappic.png",
-        tags: ["HTML", "CSS"],
-        link: "https://hopefor-humanity.vercel.app/",
+        tags: ["React", "Next.Js"],
+        link: "https://github.com/MehakFaheem/weather_app",
     },
     { 
         id: 3,
-        title: "WeatherApp",
-        desc: "An Api connected weather app.",
+        title: "HopeForHumanity",
+        desc: ".A HTML and CSS based responsive charity website.",
         img: "/charity.jpg",
-        tags: ["React", "Next.Js"],
-        link: ""
+        tags: ["HTML", "CSS"],
+        link: "https://hopefor-humanity.vercel.app/"
     }
 ]
 const projects = () => {
