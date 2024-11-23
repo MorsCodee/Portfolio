@@ -8,7 +8,7 @@ interface propsType {
     tags: string[];
 }
 
-const Card: React.FC<propsType> = ({title, desc, img, tags}) => {
+const Card: React.FC<propsType> = ({title, img,}) => {
   return (
     <div>
         <div  data-aos="zoom-in-up"className='w-[500px] sm:w-[500px] h-auto'>
