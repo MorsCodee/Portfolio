@@ -9,15 +9,14 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl items-center justify-center">Skills</h2>
         </div>
         <div>
-          <div className="flex flex-wrap justify-center space-x-4 text-accent">
-            {/* Icons with responsive sizes */}
-            <Icon icon="logos:html-5" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:css-3" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:tailwindcss-icon" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:nextjs-icon" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:react" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:typescript-icon" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
-            <Icon icon="logos:python" width="30" height="30" className="sm:w-36 sm:h-36 md:w-40 md:h-40" />
+          <div className="flex flex-wrap justify-center space-x-4 text-accent text-3xl sm:text-4xl">   
+            <Icon icon="logos:html-5" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:css-3" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:tailwindcss-icon" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:nextjs-icon" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:react" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:typescript-icon" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
+            <Icon icon="logos:python" width="40" height="40" className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
           </div>
         </div>
       </div>
