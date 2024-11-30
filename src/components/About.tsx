@@ -1,25 +1,32 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+
 const About = () => {
   return (
-    <div id="abt-sec" className='min-h-screen flex justify-center items-center'>
-    <div data-aos="zoom-in-up" className= 'w-full md:w-1/2 flex justify-center items-center'>
+    <div id="about" className="container pt-32">
+      <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+        {/* Image (Hidden on mobile) */}
+        <div className="w-full md:w-1/2 hidden md:block">
           <Image
-          src="/pink.jpeg" 
-          alt="Animated Girl"
-          className="object-cover"
-          width={450}
-          height={450}
-        />
-    </div>
-    <div id='About' className='w-full md:w-1/2 p-8'>
-      <h2 data-aos="zoom-in-up" className='text-4xl md:text-5xl font-bold-300'>About Me</h2>
-      <p data-aos="zoom-in-up" className='text-white-500 pt-4 text-[10px] sm:text-[20px]'>
-      I'm currently studying at GIAIC with a focus on Artificial Intelligence. My core skills span across web development and programming, including expertise in Tailwind CSS, HTML, TypeScript, C++, Python, JavaScript, Next.js, and React. Passionate about turning ideas into digital reality, I love crafting clean and efficient code that powers innovative solutions. Always eager to learn, I’m continually expanding my skill set to keep up with the fast-evolving tech world.
-      </p>
-    </div>
-    </div>
-  )
-}
+            className="rounded-lg"
+            src="/pink.jpeg"
+            alt="About Me"
+            width={300}
+            height={300}
+            objectFit="cover"
+          />
+        </div>
 
-export default About
+        {/* Text */}
+        <div className="w-full md:w-1/2">
+          <h2 className="text-4xl font-semibold">About Me</h2>
+          <p className="mt-4 text-lg">
+            I am a passionate developer with a strong foundation in web development. I have experience working with various front-end and back-end technologies, and I love building responsive and user-friendly applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
