@@ -1,32 +1,53 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Image from 'next/image';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
+  const socialLinks = [
+    { icon: <FaGithub className="text-xl" />, href: "#" },
+    { icon: <FaLinkedin className="text-xl" />, href: "#" },
+    { icon: <FaTwitter className="text-xl" />, href: "#" }
+  ]
+
   return (
-      <div>
-       <Navbar />
-       <div className='container grid lg:grid-cols-2 h-[calc(100vh-60px)]'>
-       <div className='text-[80px] sm:text-[70px] font-bold leading-tight flex justify-center items-center'>
-            <div>
-              <p data-aos="zoom-in-up">Hi,</p>
-              <p data-aos="zoom-in-up">I'm <span className='bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Mehak</span></p>
-              </div>
+    <div className="relative min-h-screen overflow-hidden">
+      <div className="fixed inset-0 z-0">
+        <ParticlesBackground />
+      </div>
+      <div className="container mx-auto px-4 max-w-5xl pt-10">
+        <div className="grid lg:grid-cols-1 justify-center text-center min-h-[calc(100vh-60px)] items-center">
+          {/* Text Content */}
+          <div className="space-y-6">
+            <div data-aos="fade-up" className="space-y-2">
+              <p className="text-6xl md:text-6xl font-bold text-white">Hi,</p>
+              <p className="text-5xl md:text-7xl font-bold">
+                I'm <span className="text-pink-600 bg-clip-text">Mehak</span>
+              </p>
             </div>
-          
-          <div id="hero" className='min-h-screen flex justify-center items-center'>
-          <div className= 'w-64 h-64 rounded-full overflow-hidden shadow-lg'>
-          <Image
-          src="/purple4k.jpeg" 
-          alt="Animated Girl"
-          className="object-cover"
-          width={256}
-          height={256}
-          />
-       </div>
-    </div>
-    </div>
+            
+            <p data-aos="fade-up" data-aos-delay="100" className="text-white text-lg max-w-lg mx-auto">
+              A Frontend Web developer building websites using nextjs and tailwindcss.
+            </p>
+
+            {/* Social Links */}
+            <div data-aos="fade-up" data-aos-delay="200" className="flex gap-4 justify-center text-center mt-4">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-pink-900 hover:border-pink-500 transition-all duration-300 group"
+                >
+                  <span className="text-gray-400 group-hover:text-pink-300 transition-colors duration-300">
+                    {link.icon}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
+
 export default Hero

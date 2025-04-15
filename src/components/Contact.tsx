@@ -1,40 +1,76 @@
 import React from 'react'
 import { IoMail } from "react-icons/io5";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
-const Components = () => {
+const Contact = () => {
+  const socialLinks = [
+    {
+      name: "Email",
+      icon: <IoMail size={24} />,
+      link: "mailto:mehakfaheem1234@gmail.com",
+      value: "mehakfaheem1234@gmail.com"
+    },
+    {
+      name: "Twitter",
+      icon: <FaTwitter size={24} />,
+      link: "https://twitter.com/your-twitter",
+      value: "@Syntaxjs"
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin size={24} />,
+      link: "https://linkedin.com/in/your-linkedin",
+      value: "linkedin.com/in/your-linkedin"
+    }
+  ];
+
   return (
-    <div id='Contact' className='pt-32 container'>
-      {/* Flexbox to align sections */}
-      <div className='flex flex-col md:flex-row gap-10'>
-        
-        {/* Left Section: Call Section */}
-        <div className='space-y-8 md:w-1/2 font-bold'>
-          <h2 className='bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent text-5xl'>Let's get in Touch</h2>
-          <p  className='text-white-600 text-[18px] pt-2 font-normal '>
-            Lets have a call and get in touch.
+    <div id='Contact' className='relative min-h-[70vh] py-8 overflow-hidden'>
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="mb-6">
+          <h2 data-aos="fade-up" data-aos-duration="500" className="text-xl md:text-2xl font-bold text-white mb-2">
+            Let's{' '}
+            <span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
+              Connect
+            </span>
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" className="text-gray-400 text-xs max-w-2xl">
+            Feel free to reach out through any of these channels.
           </p>
-          <div className='flex gap-3 items-center text-2xl font-normal'>
-            <IoMail size={30}/> mehakfaheem1234@gmail.com
-          </div>
         </div>
-        {/* Right Section: Form */}
-        <div className='space-y-8 md:w-1/2 px-10'>
-          <div className='flex flex-col gap-1'>
-            <label htmlFor="name">Name</label>
-            <input type="text" className='h-[40px] bg-transparent border border-accent rounded-2xl' id='name' />
-          </div>
-          <div className='flex flex-col gap-1'>
-            <label htmlFor="email">Email</label>
-            <input type="text" className='h-[40px] bg-transparent border border-accent rounded-2xl' id='email' />
-          </div>
-          <div className='flex flex-col gap-1'>
-            <label htmlFor="msg">Message</label>
-            <textarea className='bg-transparent border border-accent rounded-2xl' id='msg' rows={8}></textarea>
-          </div>
-          <button className='rounded-full p-2 px-6 bg-gradient-to-r from-purple-400 to-pink-400'>Send</button>
+
+        <div className="grid gap-4">
+          {socialLinks.map((social, index) => (
+            <a
+              key={social.name}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-aos="fade-up"
+              data-aos-delay={20 * index}
+              data-aos-duration="400"
+              className="group relative bg-black/40 backdrop-blur-sm rounded-lg border border-pink-500/10 hover:border-pink-400/30 transition-all duration-300 p-4 flex items-center gap-4"
+            >
+              <div className="text-pink-400 group-hover:text-pink-300 transition-colors duration-300">
+                {social.icon}
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-white group-hover:text-pink-400 transition-colors duration-300">
+                  {social.name}
+                </h3>
+                <p className="text-xs text-gray-400 group-hover:text-white transition-colors duration-300">
+                  {social.value}
+                </p>
+              </div>
+              
+              {/* Hover effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500/5 to-rose-400/5 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300" />
+            </a>
+          ))}
         </div>
       </div>
     </div>
   )
 }
-export default Components;
+
+export default Contact;
