@@ -13,16 +13,6 @@ const About = () => {
       name: "Component-Based Development",
       description: "Proficient in React and TypeScript, ensuring scalable, maintainable, and reusable UI components. Skilled in state management and handling dynamic content efficiently."
     },
-    {
-      number: "3",
-      name: "Performance & Optimization",
-      description: "Experienced in optimizing websites for speed, accessibility, and SEO. Implementing best practices for lazy loading, caching, and responsive design to enhance user experience."
-    },
-    {
-      number: "4",
-      name: "Web Technologies & Tools",
-      description: "Hands-on experience with JavaScript, Python, API integration, and version control (Git/GitHub). Familiar with DevOps practices for deploying and maintaining web applications."
-    }
   ];
 
   return (

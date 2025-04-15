@@ -19,21 +19,21 @@ const data = [
         link: "https://milestone3-assignment-51nl2l29g-mehak-s-projects.vercel.app/",
     },
     {
-        id: 2,
-        title: "HopeForHumanity",
-        desc: "A HTML and CSS based responsive charity website.",
-        img: "/charity.png",
-        tags: [ "HTML", "CSS"],
-        link: "https://hopefor-humanity.vercel.app/",
+      id: 2,
+      title: 'ToDo List',
+      desc: "A basic TodoApp for everyday task management.",
+      img: '/todoapp.png',
+      tags: ['React', 'Node', 'CSS', 'Typescript'],
+      link: 'https://to-do-d18yk7s7o-mehak-s-projects.vercel.app/',
     },
-    { 
-        id: 3,
-        title: "ToDo List",
-        desc: "A React and Typescript based app for managing and organizing tasks.",
-        img: "/todoapp.png",
-        tags: ["React", "Node", "CSS", "Typescript"],
-        link: "https://to-do-d18yk7s7o-mehak-s-projects.vercel.app/"
-    }
+    {
+      id: 3,
+      title: "One",
+      desc: "A minimalist aesthetic landing page with metallic gradient background effects using Next.js and Tailwind CSS.",
+      img: "/one.png",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Canvas API"],
+      link: "https://one-bice.vercel.app/",
+  }
 ]
 
 const Projects = () => {

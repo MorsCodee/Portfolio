@@ -16,12 +16,6 @@ const Contact = () => {
       link: "https://twitter.com/your-twitter",
       value: "@Syntaxjs"
     },
-    {
-      name: "LinkedIn",
-      icon: <FaLinkedin size={24} />,
-      link: "https://linkedin.com/in/your-linkedin",
-      value: "linkedin.com/in/your-linkedin"
-    }
   ];
 
   return (
