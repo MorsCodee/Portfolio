@@ -20,18 +20,18 @@ const data = [
     },
     {
       id: 2,
-      title: 'ToDo List',
-      desc: "A basic TodoApp for everyday task management.",
-      img: '/todoapp.png',
-      tags: ['React', 'Node', 'CSS', 'Typescript'],
-      link: 'https://to-do-d18yk7s7o-mehak-s-projects.vercel.app/',
+      title: 'Book Review Site',
+      desc: "A book review website built with React and Tailwind CSS, featuring a user-friendly interface for book enthusiasts.",
+      img: '/booksite.png',
+      tags: ['React', 'Tailwind', 'Javascript'],
+      link: 'https://book-review-site-gules.vercel.app/',
     },
     {
       id: 3,
       title: "One",
       desc: "A minimalist aesthetic landing page with metallic gradient background effects using Next.js and Tailwind CSS.",
-      img: "/one.png",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Canvas API"],
+      img: "/Onee.png",
+      tags: ["Next.js", "React components", "Tailwind CSS"],
       link: "https://one-bice.vercel.app/",
   }
 ]
