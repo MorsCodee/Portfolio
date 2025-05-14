@@ -31,7 +31,7 @@ const data = [
       title: "One",
       desc: "A minimalist aesthetic landing page with metallic gradient background effects using Next.js and Tailwind CSS.",
       img: "/Onee.png",
-      tags: ["Next.js", "React components", "Tailwind CSS"],
+      tags: ["Next.js", "Tailwind CSS", "Framer"],
       link: "https://one-bice.vercel.app/",
   }
 ]
