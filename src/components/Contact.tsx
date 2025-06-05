@@ -10,12 +10,6 @@ const Contact = () => {
       link: "mailto:mehakfaheem1234@gmail.com",
       value: "mehakfaheem1234@gmail.com"
     },
-    {
-      name: "Twitter",
-      icon: <FaTwitter size={24} />,
-      link: "https://twitter.com/your-twitter",
-      value: "@Syntaxjs"
-    },
   ];
 
   return (
