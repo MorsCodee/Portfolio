@@ -8,7 +8,7 @@ const Contact = () => {
       name: "Email",
       icon: <IoMail size={24} />,
       link: "mailto:mehakfaheem1234@gmail.com",
-      value: "mehakfaheem1234@gmail.com"
+      value: "mehak@gmail.com"
     },
   ];
 
