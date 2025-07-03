@@ -4,9 +4,9 @@ import ParticlesBackground from './ParticlesBackground';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: <FaGithub className="text-xl" />, href: "#" },
-    { icon: <FaLinkedin className="text-xl" />, href: "#" },
-    { icon: <FaTwitter className="text-xl" />, href: "#" }
+    { icon: <FaGithub className="text-xl" />, href: "https://github.com/MehakFaheem" },
+    { icon: <FaLinkedin className="text-xl" />, href: "https://www.linkedin.com/in/syntax-js-219993278/" },
+    { icon: <FaTwitter className="text-xl" />, href: "https://x.com/Syntaxjs" }
   ]
 
   return (
