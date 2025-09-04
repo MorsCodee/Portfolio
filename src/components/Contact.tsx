@@ -23,7 +23,7 @@ const Contact = () => {
             </span>
           </h2>
           <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" className="text-gray-400 text-xs max-w-2xl">
-            Feel free to reach out through any of these channels.
+            Feel free to reach out.
           </p>
         </div>
 
