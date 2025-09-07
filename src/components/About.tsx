@@ -11,7 +11,7 @@ const About = () => {
     {
       number: "2",
       name: "Component-Based Development",
-      description: "Proficient in React and TypeScript, ensuring scalable, maintainable, and reusable UI components. Skilled in state management and handling dynamic content efficiently."
+      description: "Proficient in React and Nextjs, ensuring scalable, maintainable, and reusable UI components. Skilled in state management and handling dynamic content efficiently."
     },
   ];
 
@@ -27,7 +27,7 @@ const About = () => {
           </h2>
           <p data-aos="fade-up" data-aos-delay="100" className="text-gray-400 text-sm max-w-2xl">
             I'm a Frontend Web Developer specializing in Next.js and Tailwind CSS, crafting sleek and efficient user interfaces. 
-            I also have experience with TypeScript, JavaScript, Python, and React, allowing me to build scalable and interactive web applications. 
+            I also have experience with JavaScript, Python, and React, allowing me to build scalable and interactive web applications. 
             Passionate about turning ideas into reality with clean, maintainable, and high-performance code.
           </p>
         </div>
